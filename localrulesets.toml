@@ -1,0 +1,7 @@
+[[rulesets]]
+group = "🍊 黑名单"
+ruleset = "orange/Clash/Blacklist.list"
+
+[[rulesets]]
+group = "🍊 白名单"
+ruleset = "orange/Clash/Whitelist.list"
