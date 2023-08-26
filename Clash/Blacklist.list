@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,byym78.com
 DOMAIN-SUFFIX,ubuntu.com
 DOMAIN-SUFFIX,brew.sh
+DOMAIN-SUFFIX,proxmox.com
 DOMAIN-SUFFIX,chocolatey.org
 DOMAIN-SUFFIX,debian.org
 DOMAIN-KEYWORD,hdouban
