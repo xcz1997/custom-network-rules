@@ -36,15 +36,15 @@ enable_filter = false
 #'''
 
 # Setting an external config file as default when none is specified, supports local files/URL
-# default_external_config = "config/example_external_config.toml"
+default_external_config = "orange/custom.ini"
 
 # The file scope limit of the 'rule_base' options in external configs.
 base_path = "base"
 
 # Clash config base used by the generator, supports local files/URL
-#clash_rule_base = "base/all_base.tpl"
+clash_rule_base = "base/all_base.tpl"
 
-clash_rule_base = "orange/GeneralClashConfig.yml"
+#clash_rule_base = "orange/GeneralClashConfig.yml"
 
 # Surge config base used by the generator, supports local files/URL
 surge_rule_base = "base/all_base.tpl"
@@ -66,6 +66,9 @@ loon_rule_base = "base/all_base.tpl"
 
 # Shadowsocks Android config base used by the generator, supports local files/URL
 sssub_rule_base = "base/all_base.tpl"
+
+#sing-box config base used by the generator, supports local files/URL
+singbox_rule_base = "base/all_base.tpl"
 
 # Proxy used to download rulesets or subscriptions, set to NONE or empty to disable it, set to SYSTEM to use system proxy.
 # Accept cURL-supported proxies (http:// https:// socks4a:// socks5://)
@@ -137,6 +140,10 @@ clash_use_new_field_name = true
 #       - name: name2
 #         key: value
 clash_proxies_style = "flow"
+#clash_proxy_groups_style = "block"
+
+#add Clash mode to sing-box rules, and add a GLOBAL group to end of outbounds
+singbox_add_clash_modes = true
 
 [[node_pref.rename_node]]
 match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
@@ -168,7 +175,7 @@ remove_old_emoji = true
 
 [[emojis.emoji]]
 #match = '(流量|时间|应急)'
-#emoji = '🏳️‍🌈'
+#emoji = 'ߏ㯸숧
 import = "snippets/emoji.toml"
 
 # [[custom_groups]]
@@ -224,6 +231,10 @@ key = "clash.http_port"
 value = "7890"
 
 [[template.globals]]
+key = "clash.mixed_port"
+value = "7890"
+
+[[template.globals]]
 key = "clash.socks_port"
 value = "7891"
 
@@ -235,13 +246,26 @@ value = "true"
 key = "clash.log_level"
 value = "info"
 
+[[template.globals]]
+key = "singbox.allow_lan"
+value = "true"
+
+[[template.globals]]
+key = "singbox.mixed_port"
+value = "2080"
+
+
 [[aliases]]
 uri = "/clash"
-target = "/sub?target=clash&config=https%3A%2F%2Fraw.githubusercontent.com%2Fxcz1997%2Fcustom-network-rules%2Fmain%2Fcustom.ini"
+target = "/sub?target=clash"
+
+[[aliases]]
+uri = "/singbox"
+target = "/sub?target=singbox"
 
 [[aliases]]
 uri = "/clashr"
-target = "/sub?target=clashr&config=https%3A%2F%2Fraw.githubusercontent.com%2Fxcz1997%2Fcustom-network-rules%2Fmain%2Fcustom.ini"
+target = "/sub?target=clashr"
 
 [[aliases]]
 uri = "/surge"

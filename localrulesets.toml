@@ -5,3 +5,11 @@ ruleset = "orange/Clash/Blacklist.list"
 [[rulesets]]
 group = "🍊 白名单"
 ruleset = "orange/Clash/Whitelist.list"
+
+[[rulesets]]
+group = "🎬 Mdcx"
+ruleset = "orange/Clash/Mdcx.list"
+
+[[rulesets]]
+group = "🤖 claude"
+ruleset = "orange/Clash/Claude.list"
