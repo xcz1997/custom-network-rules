@@ -32,36 +32,6 @@ Rule: ~
 # Sort proxies in Proxies module by default/latency/alphabet
 cfw-proxies-order: alphabet
 
-# 系统代理跳过列表 cfw-bypass
-# System proxy will ignore these domains(or ipnet)
-# 系统代理跳过列表-备份的，不起作用，
-# 使用时可以将cfw-bypass-bak与cfw-bypass内容互换
-cfw-bypass-bak:
-  # 原有字段不用删除
-  - qq.com
-  - 'music.163.com' # 网易云域名1
-  - '*.music.126.net' # 网易云域名2
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
 
 # 系统代理跳过列表 cfw-bypass
 # System proxy will ignore these domains(or ipnet)
@@ -116,7 +86,6 @@ cfw-bypass:
   - "*.zhenguanyu.biz"
   - "*.zhenguanyu.com"
   # CN域名直连(中国|公司|网络)
-  - "*.cn"
   - "*.xn--fiqs8s"
   - "*.xn--55qx5d"
   - "*.xn--io0a7i"
