@@ -69,6 +69,9 @@ cfw-bypass-bak:
 # 系统代理跳过列表 起作用的
 cfw-bypass:
   # 直连列表
+  - '*.ehi.*'
+  - '*.1hai.*'
+  - '*.yaodongfang.*'
   # MyList
   - "*.13th.tech"
   - "*.423down.com"
