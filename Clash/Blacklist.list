@@ -21,7 +21,7 @@ DOMAIN-SUFFIX,proxmox.com
 DOMAIN-SUFFIX,chocolatey.org
 DOMAIN-SUFFIX,debian.org
 DOMAIN-KEYWORD,debian.map
-DDMAIN-SUFFIX,python.org
+DOMAIN-SUFFIX,python.org
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
